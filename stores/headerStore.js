@@ -19,6 +19,7 @@ export const useHeaderStore = defineStore("headerStore", {
   getters: {},
   actions: {
     handleSorting() {
+
       this.productSortOrder = this.productSortOrder === 'ASC' ? 'DESC' : 'ASC'
     },
     async getCategories() {
