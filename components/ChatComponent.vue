@@ -22,9 +22,9 @@ const headerStore = useHeaderStore();
 const toggleChat = () => {
   headerStore.toggleChatBox()
 }
-const chatwithbot = () => {
-  headerStore.chatWithBot("I have a question")
-}
+// const chatwithbot = () => {
+//   headerStore.chatWithBot("I have a question")
+// }
 const { showChat } = storeToRefs(headerStore);
 </script>
 

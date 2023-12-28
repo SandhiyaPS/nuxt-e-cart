@@ -6,10 +6,10 @@
     </div>
     <CommonAppFooter />
     <div class="chatImg-wrapper">
-      <div v-if="showChat">
-        <ChatComponent />
+      <div >
+        <ChatWidget v-if="showChat" @closeChat="toggleChat"/>
       </div>
-      <img :src="chatImg" alt="img" class="thumb" @click="toggleChat" />
+      <img v-if="!showChat" :src="chatImg" alt="img" class="thumb" @click="toggleChat" />
     </div>
   </div>
 </template>
@@ -39,7 +39,7 @@ const { langList, locationList, categoryList, showChat } = storeToRefs(headerSto
   position: fixed;
   right: 20px;
   bottom: 20px;
-  /* background-color: #E0F2F1; */
+  background-color: #E0F2F1;
   cursor: pointer;
 }
 

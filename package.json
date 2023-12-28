@@ -22,8 +22,10 @@
     "@headlessui/vue": "^1.7.15",
     "@pinia/nuxt": "^0.4.11",
     "axios": "^1.6.0",
+    "openai": "^4.24.1",
     "pinia": "^2.1.6",
     "tw-elements": "^1.0.0-beta3",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vue3-markdown-it": "^1.0.10"
   }
 }
